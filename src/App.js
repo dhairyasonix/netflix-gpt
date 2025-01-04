@@ -1,8 +1,9 @@
 
 import './App.css';
+import Body from './components/Body';
 
 function App() {
-  return <div className="font-bold text-green-400 "> wellcome to react base netflix gpt</div>
+  return (<Body/>);
   
 }
 
