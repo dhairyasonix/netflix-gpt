@@ -4,6 +4,11 @@
 -configure tailwind
 -Header
 -Login Form
+-SIGN IN & sign up
+-form validation
+-useref
+-firebase setup
+-deploying app to production
 
 
 
