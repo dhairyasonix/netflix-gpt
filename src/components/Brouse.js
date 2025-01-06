@@ -1,8 +1,9 @@
 import React from 'react'
+import Header from './Header'
 
 const Brouse = () => {
   return (
-    <div>Brouse</div>
+    <div><Header/></div>
   )
 }
 

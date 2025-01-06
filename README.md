@@ -9,6 +9,11 @@
 -useref
 -firebase setup
 -deploying app to production
+_create sign uo user account
+-implement sign in user api
+-created redux store with userdlice
+-Implemented signout
+-update profile
 
 
 
