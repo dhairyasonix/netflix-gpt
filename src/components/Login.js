@@ -1,88 +1,82 @@
-import React, { use, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import Header from './Header'
 import { cheackValidation } from '../utils/validation';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile} from "firebase/auth";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from '../utils/firebase';
-import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
+import { BACKGROUND } from '../utils/constants';
 
 const Login = () => {
 
     const [issignInForm, setissignInForm] = useState(true);
     const [errormessage, seterrormessage] = useState(null);
-    const navigate = useNavigate()
-const dispatch = useDispatch()
+
+    const dispatch = useDispatch();
     const email = useRef(null);
-    const password = useRef(null)
-    const name = useRef(null)
+    const password = useRef(null);
+    const name = useRef(null);
 
     const handleButton = () => {
 
         const message = cheackValidation(email?.current?.value, password?.current?.value)
-        seterrormessage(message)
+        seterrormessage(message);
 
         if (message) return; // retun if error
 
 
         if (!issignInForm) {//sign up
-            console.log(email?.current?.value)
+            
 
             createUserWithEmailAndPassword(auth, email?.current?.value, password?.current?.value)
                 .then((userCredential) => {
-                   
+
                     const user = userCredential.user;
-                    console.log(user)
+                    
                     updateProfile(user, {
                         displayName: name?.current?.value, photoURL: "https://example.com/jane-q-user/profile.jpg"
-                      }).then(() => {
-                         const { uid, email, displayName } = auth.currentUser;
-                                        dispatch(addUser({ uid: uid, displayName: displayName, email: email }))
-                        navigate("/brouse")
-                      }).catch((error) => {
+                    }).then(() => {
+                        const { uid, email, displayName } = auth.currentUser;
+                        dispatch(addUser({ uid: uid, displayName: displayName, email: email }))
+
+                    }).catch((error) => {
                         // An error occurred
                         const errorMessage = error.message;
-                    seterrormessage(errorMessage)
-                      });
-                    
+                        seterrormessage(errorMessage)
+                    });
+
                 })
                 .catch((error) => {
                     const errorCode = error.code;
                     const errorMessage = error.message;
-                    seterrormessage(errorMessage)
+                    seterrormessage(errorMessage + "-" + errorCode)
                     // ..
                 });
 
         }
         else {
             signInWithEmailAndPassword(auth, email?.current?.value, password?.current?.value)
-            .then((userCredential) => {
-              // Signed in 
-              const user = userCredential.user;
-              console.log(user)
-              navigate("/brouse")
-            })
-            .catch((error) => {
-              const errorCode = error.code;
-              const errorMessage = error.message;
-              seterrormessage(errorMessage)
-            });
+                .then((userCredential) => {
+                    // Signed in 
+                    //   const user = userCredential.user;
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    seterrormessage(errorMessage + "-" + errorCode)
+                });
         }
-
-
-
-
-    }
+};
 
     const toggleSignIn = () => {
         setissignInForm(!issignInForm)
-    }
+    };
 
     return (
         <div>
             <div className='absolute z-10'> <Header /></div>
             <div>
-                <img className="absolute" src='https://assets.nflxext.com/ffe/siteui/vlv3/2f5a878d-bbce-451b-836a-398227a34fbf/web/IN-en-20241230-TRIFECTA-perspective_5ab944a5-1a71-4f6d-b341-8699d0491edd_large.jpg' alt='loginBg' />
+                <img className="absolute" src={BACKGROUND} alt='loginBg' />
             </div>
             <form onSubmit={(e) => e.preventDefault()} className='px-14 my-36 mx-auto w-3/12 left-0 right-0 absolute bg-black text-white rounded-lg bg-opacity-80'>
 
@@ -107,6 +101,6 @@ const dispatch = useDispatch()
 
         </div>
     )
-}
+};
 
 export default Login

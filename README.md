@@ -9,12 +9,25 @@
 -useref
 -firebase setup
 -deploying app to production
-_create sign uo user account
+-create sign uo user account
 -implement sign in user api
 -created redux store with userdlice
 -Implemented signout
 -update profile
-
+-BugFix : sign up user display name
+-Bugfix : if user is not logged in redirect to login page or visa versa
+-unsubscribe to the on auth statechange
+-added hard coded value to the constant files
+- registerd tmdb api and create an app & get access token
+-get api call
+- get data from tmdb
+- coustom hook
+- created movieSlice
+- planning for main and secondary containner
+-fech data for trailler video
+-updated store with trailler video
+-embedded youtube video and auto play
+- added tailwind css
 
 
 # features 
@@ -28,7 +41,15 @@ _create sign uo user account
     - redirect to Brouser page
 
    - Brouser
-     - main movie - baground movie trailler - title & discription - MoviesSuggustion - MovieList (vertical croll)
+     - main movie - baground movie trailler - title & discription - MoviesSuggustion - MovieList (vertical scroll)
+     - (planning)
+      - Main video conatainer
+        -video background
+        -title and discription
+      - Secondary conatiner
+        -movie list*n 
+          -cards * n
+    
 - netflix gpt
   - Search bar
   - Movie suggesions
