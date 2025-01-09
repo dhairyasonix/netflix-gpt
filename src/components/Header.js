@@ -50,12 +50,12 @@ const Header = () => {
 
       {location.pathname === "/brouse" && user && <div className='flex'>
 
-        <h4 className='my-8 py-4 px-2 font-bold text-white'>Hi {user?.displayName} !</h4>
+        <h4 className='my-8 py-4 px-2 font-bold text-white'>Hi {user?.displayName}</h4>
         <div>
-          <img className='w-24 h-28  my-2 px-2 py-4 mix-blend-multiply' src={USER_ICON} alt='user'></img>
+          {/* <img className='w-16 h-26  my-2 px-2 py-4 mix-blend-multiply' src={USER_ICON} alt='user'></img> */}
 
         </div>
-        <button onClick={handleSignout} className=' my-10 mr-10 p-2 font-bold text-lg text-black rounded-lg bg-red-500'>Sign Out</button>
+        <button onClick={handleSignout} className=' my-10 mr-10 p-2 font-bold text-lg text-white rounded-lg'>Sign Out</button>
       </div>}
 
 

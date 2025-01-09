@@ -5,8 +5,7 @@ import { useSelector } from 'react-redux'
 const VideoBackground = ({ movieId }) => {
     const trailerVideo = useSelector(store=>store.movies?.trailerVideo)
     useMovieTrailer(movieId)
-console.log(movieId)
-console.log(trailerVideo)
+
     return (
         <div className="w-full h-screen absolute overflow-hidden -top-24 ">
         <iframe

@@ -47,8 +47,14 @@
         -video background
         -title and discription
       - Secondary conatiner
-        -movie list*n 
-          -cards * n
+        - movie list*n 
+          - cards * n
+        - (planning) 
+         - movieList- popular
+           - multiple cards cards * n
+         - movieList- trending
+           - multiple cards cards * n
+         - movieList- horror
     
 - netflix gpt
   - Search bar
