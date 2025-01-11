@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { addNowPlayingMovies, addPopularMovies, addTopRatedMovies, addUpcominfMovies } from "../utils/movieSlice";
 
 const useMovies =(movies)=>{
-  console.log(movies)
+  
   const dispatch = useDispatch();
 //now_playing
 //addNowPlayingMovies

@@ -16,10 +16,6 @@ const appRouter = createBrowserRouter([
 ]);
 
 const Body = () => {
-
-    
-   
-
     return (
         <div>
             <RouterProvider router={appRouter} />
