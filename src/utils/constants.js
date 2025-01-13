@@ -26,4 +26,7 @@ export const API_OPtion ={
   {
     identifier:"spanish",name:"Spanish"
   },
-]
+];
+
+
+export const API_KEY ="bcf700c1-8dee-4ff6-adee-d33c27e58f96"
