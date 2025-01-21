@@ -59,11 +59,12 @@ const Header = () => {
       <img className='w-48 mx-10 px-6 py-8 ' src={LOGO} alt='logo'></img>
 
       {location.pathname === "/brouse" && user && <div className='flex'>
+        <h4 className='my-8 py-4 px-2 font-bold text-white'>Hi {user?.displayName}</h4>
         {showGptSearch && <select className='px-2  mx-2 my-12 bg-gray-700 text-white rounded-sm hover:bg-opacity-70' onClick={handleLanguageChange}>
           {SUPPORTED_LANG.map(lan => <option key={lan.identifier} value={lan.identifier}>{lan.name}</option>)}
         </select>}
         <button onClick={handleGptSearch} className='px-2 py-2 mx-2 my-10 bg-purple-600 text-white font-bold rounded-lg hover:bg-opacity-70'>{showGptSearch? "Home" : "GPT Search"}</button>
-        <h4 className='my-8 py-4 px-2 font-bold text-white'>Hi {user?.displayName}</h4>
+        
         <div>
           {/* <img className='w-16 h-26  my-2 px-2 py-4 mix-blend-multiply' src={USER_ICON} alt='user'></img> */}
 

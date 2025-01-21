@@ -7,9 +7,9 @@ const GptSerchPage = () => {
   return (
     <div>
       <div>
-        <img className="absolute -z-10" src={BACKGROUND} alt='loginBg' />
+        <img className="fixed -z-10" src={BACKGROUND} alt='loginBg' />
       </div>
-      <div className='pt-[10%] w-[50%] mx-auto '>
+      <div className='pt-[10%] '>
         <GptSearchBar />
         <GptSearchSuggestion />
       </div>
