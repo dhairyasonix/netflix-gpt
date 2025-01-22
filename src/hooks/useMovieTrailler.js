@@ -19,7 +19,7 @@ const useMovieTrailer = (movieId) => {
     }
 
     useEffect(() => {
-         getMovieVideo();
+         getMovieVideo(); // memoitation
     }, []);
 }
 

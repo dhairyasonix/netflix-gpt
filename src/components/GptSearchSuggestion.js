@@ -1,13 +1,13 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import MovieList from './MovieList';
-
+//changes
 const GptSearchSuggestion = () => {
   const { gptMoviesResult,
     moviesName } = useSelector(store => store.gpt);
   if (!moviesName) return null;
 
-
+// mapping sujjections
   return (
     <div className='bg-black p-4 m-4 text-white bg-opacity-90'>
       <div>

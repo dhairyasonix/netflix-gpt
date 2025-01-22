@@ -25,7 +25,7 @@ const useMovies = (movies) => {
   };
 
   useEffect(() => {
-    !nowPlyingMovies && getNowPlayingMovies()
+    !nowPlyingMovies && getNowPlayingMovies()//memoitation
   }, []);
 };
 

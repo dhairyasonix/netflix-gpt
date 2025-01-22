@@ -45,7 +45,7 @@ export const GptSearchBar = () => {
     const tmdbResults = await Promise.all(prommiseArray);
     console.log(tmdbResults);
     dispach(addGptMovieResult({ gptMovies: gptMovies, tmdbResults }))
-  }
+  }//tmdb promises
 
   return (
     <div className='w-[50%] mx-auto'>

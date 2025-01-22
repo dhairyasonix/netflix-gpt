@@ -2,7 +2,7 @@ import React from 'react'
 import { GptSearchBar } from './GptSearchBar'
 import GptSearchSuggestion from './GptSearchSuggestion'
 import { BACKGROUND } from '../utils/constants'
-
+//changes
 const GptSerchPage = () => {
   return (
     <div>

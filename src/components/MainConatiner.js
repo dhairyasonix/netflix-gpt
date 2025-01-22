@@ -10,7 +10,7 @@ const MainConatiner = () => {
         original_title, overview, id
     } = movies[0];
 
-
+//changes
 
     return (
         <div className=''>

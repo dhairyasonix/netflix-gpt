@@ -30,5 +30,5 @@ export const SUPPORTED_LANG = [{
 
 
 
-export const GPT_KEY = "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";
+export const GPT_KEY = "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";  // api key
 console.log(process.env)
