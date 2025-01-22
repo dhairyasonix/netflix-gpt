@@ -38,17 +38,17 @@ export const GptSearchBar = () => {
     });
 
     const gptMovies = gptResult?.choices[0]?.message?.content.split(",")
-    console.log(gptMovies);
+    
     //
     // for each movie will serch tmdb api
     const prommiseArray = gptMovies?.map(movie => searchMovieTmdb(movie));
     const tmdbResults = await Promise.all(prommiseArray);
-    console.log(tmdbResults);
+   
     dispach(addGptMovieResult({ gptMovies: gptMovies, tmdbResults }))
   }
 
   return (
-    <div className='w-[50%] mx-auto'>
+    <div className='md:w-[50%] mx-auto'>
       <form onSubmit={(e) => e.preventDefault()} className=' bg-black grid grid-cols-12'>
         <input ref={input} className='p-4 m-4 col-span-8 rounded-lg' type='text' placeholder={lang[langugae].gptSearchPlaceholder} />
         <button onClick={heldleSearch} className='p-4 mr-4 my-4 bg-red-600 text-white rounded-lg col-span-4'>{lang[langugae].search}</button>

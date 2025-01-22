@@ -5,9 +5,9 @@ const MovieList = ({ title, movies }) => {
     if (!movies) return;
     
     return (
-        <div className='px-6 text-white'>
+        <div className='md:px-6 px-2 text-white'>
 
-            <h1 className='text-3xl py-4'>{title}</h1>
+            <h1 className='text-xl md:text-3xl py-4'>{title}</h1>
 
             <div className='flex scroll-container overflow-x-scroll scrollbar-hide'>
 

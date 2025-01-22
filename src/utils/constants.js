@@ -31,4 +31,3 @@ export const SUPPORTED_LANG = [{
 
 
 export const GPT_KEY = "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";
-console.log(process.env)

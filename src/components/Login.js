@@ -74,11 +74,11 @@ const Login = () => {
 
     return (
         <div>
-            <div className='absolute z-10'> <Header /></div>
+            <div className='relative z-10 m-auto'> <Header /></div>
             <div>
-                <img className="absolute" src={BACKGROUND} alt='loginBg' />
+                <img className="absolute h-screen object-cover md:w-full" src={BACKGROUND} alt='loginBg' />
             </div>
-            <form onSubmit={(e) => e.preventDefault()} className='px-14 my-36 mx-auto w-3/12 left-0 right-0 absolute bg-black text-white rounded-lg bg-opacity-80'>
+            <form onSubmit={(e) => e.preventDefault()} className='px-14 my-36 mx-auto md:w-3/12 left-0 right-0 absolute bg-black text-white rounded-lg bg-opacity-80'>
 
 
 
