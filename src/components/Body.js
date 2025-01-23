@@ -1,10 +1,10 @@
 
 import Login from "./Login"
 import Brouse from './Brouse'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import {  createHashRouter, RouterProvider } from 'react-router-dom'
 
 
-const appRouter = createBrowserRouter([
+const appRouter = createHashRouter([// removed createBrowserRouter as github is static file server
     {
         path: "/",
         element: <Login />
