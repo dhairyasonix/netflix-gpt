@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/https//dhairyasonix.github.io/netflix-gpt/static/css/main.850bf3a0.css",
-    "main.js": "/https//dhairyasonix.github.io/netflix-gpt/static/js/main.41fa99bc.js",
-    "static/js/488.7d20b25e.chunk.js": "/https//dhairyasonix.github.io/netflix-gpt/static/js/488.7d20b25e.chunk.js",
-    "index.html": "/https//dhairyasonix.github.io/netflix-gpt/index.html",
-    "main.850bf3a0.css.map": "/https//dhairyasonix.github.io/netflix-gpt/static/css/main.850bf3a0.css.map",
-    "main.41fa99bc.js.map": "/https//dhairyasonix.github.io/netflix-gpt/static/js/main.41fa99bc.js.map",
-    "488.7d20b25e.chunk.js.map": "/https//dhairyasonix.github.io/netflix-gpt/static/js/488.7d20b25e.chunk.js.map"
+    "main.css": "/netflix-gpt/static/css/main.850bf3a0.css",
+    "main.js": "/netflix-gpt/static/js/main.e8f1d2e7.js",
+    "static/js/488.7d20b25e.chunk.js": "/netflix-gpt/static/js/488.7d20b25e.chunk.js",
+    "index.html": "/netflix-gpt/index.html",
+    "main.850bf3a0.css.map": "/netflix-gpt/static/css/main.850bf3a0.css.map",
+    "main.e8f1d2e7.js.map": "/netflix-gpt/static/js/main.e8f1d2e7.js.map",
+    "488.7d20b25e.chunk.js.map": "/netflix-gpt/static/js/488.7d20b25e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.850bf3a0.css",
-    "static/js/main.41fa99bc.js"
+    "static/js/main.e8f1d2e7.js"
   ]
 }
