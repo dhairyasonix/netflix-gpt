@@ -12,16 +12,23 @@ const useMovies = (movies) => {
   //addNowPlayingMovies
   const getNowPlayingMovies = async () => {
     
-    const data = await fetch("https://api.themoviedb.org/3/movie/" + movies + "?page=1", API_OPtion);
-    const json = await data.json();
-    if (movies === "now_playing")
-      dispatch(addNowPlayingMovies(json?.results));
-    if (movies === "popular")
-      dispatch(addPopularMovies(json?.results));
-    if (movies === "top_rated")
-      dispatch(addTopRatedMovies(json?.results));
-    if (movies === "upcoming")
-      dispatch(addUpcominfMovies(json?.results));
+    try {
+      const data = await fetch("https://api.themoviedb.org/3/movie/" + movies + "?page=1", API_OPtion);
+      const json = await data.json();
+
+      if (movies === "now_playing")
+        dispatch(addNowPlayingMovies(json?.results));
+      if (movies === "popular")
+        dispatch(addPopularMovies(json?.results));
+      if (movies === "top_rated")
+        dispatch(addTopRatedMovies(json?.results));
+      if (movies === "upcoming")
+        dispatch(addUpcominfMovies(json?.results));
+    }
+    catch (error) {
+      console.error("Failed to fetch movies:", error);
+      alert("please change dns to 1.1.1.1");
+    }
   };
 
   useEffect(() => {
