@@ -14,9 +14,7 @@ const appRouter = createHashRouter([// removed createBrowserRouter as github is 
         element: <Brouse />
     },
 ],
-{
-   basename: process.env.NODE_ENV === "production" ? "/netflix-gpt" : ""
-  }
+
 );
 
 const Body = () => {
