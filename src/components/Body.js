@@ -13,7 +13,11 @@ const appRouter = createBrowserRouter([
         path: "/brouse",
         element: <Brouse />
     },
-]);
+],
+{
+   basename: process.env.NODE_ENV === "production" ? "/netflix-gpt" : ""
+  }
+);
 
 const Body = () => {
     return (
