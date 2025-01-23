@@ -1,66 +1,106 @@
-## Netflix gpt
+# Netflix GPT
 
-- Ceate react app
-- configure tailwind
-- Header
-- Login Form
-- SIGN IN & sign up
-- form validation
-- useref
-- firebase setup
-- deploying app to production
-- create sign uo user account
-- implement sign in user api
-- created redux store with userdlice
-- Implemented signout
-- update profile
-- BugFix : sign up user display name
-- Bugfix : if user is not logged in redirect to login page or visa versa
-- unsubscribe to the on auth statechange
-- added hard coded value to the constant files
-- registerd tmdb api and create an app & get access token
-- get api call
-- get data from tmdb
-- coustom hook
-- created movieSlice
-- planning for main and secondary containner
-- updated store with trailler video
-- fech data for trailler video
-- embedded youtube video and auto play
-- added tailwind css
-- gpt search page
-- gpt search bar
-- multi-language feature for gpt
-- 
+## Overview
 
-# features
+Netflix GPT is a React application that integrates with the TMDB API to provide a movie browsing experience. The app features user authentication, a search functionality powered by GPT, and a responsive design using Tailwind CSS.
 
-- body
+## Features
 
-  - Header
-  - Login & sign up
-  - sign in sign up(authenticate)
-    - email
-    - pass
-    - submit
-  - redirect to Brouser page
+- Create a React app
+- Configure Tailwind CSS
+- Header component
+- Login and Sign Up forms
+- Form validation
+- Use of useRef for form handling
+- Firebase setup for authentication
+- Deploying the app to production
+- Create user accounts for sign-up
+- Implement sign-in user API
+- Created Redux store with user slice
+- Implemented sign-out functionality
+- Update user profile
+- Bug Fixes:
+  - Display name for sign-up users
+  - Redirect to login page if the user is not logged in
+- Unsubscribe from the onAuthStateChange listener
+- Added hardcoded values to the constants file
+- Registered for TMDB API and created an app to get an access token
+- API calls to fetch data from TMDB
+- Custom hooks for data fetching
+- Created movie slice for Redux
+- Planning for main and secondary containers
+- Updated store with trailer video data
+- Fetch data for trailer videos
+- Embedded YouTube videos with autoplay
+- Added Tailwind CSS for styling
+- GPT search page and search bar
+- Multi-language feature for GPT
+- GPT search API integration
+- Optimized performance
+- Responsive design
+- Deployed on GitHub Pages
+- Handled DNS errors
 
-  - Brouser
-    - main movie - baground movie trailler - title & discription - MoviesSuggustion - MovieList (vertical scroll)
-    - (planning)
-    - Main video conatainer
-      - video background
-      - title and discription
-    - Secondary conatiner
-      - movie list\*n
-        - cards \* n
-      - (planning)
-      - movieList- popular
-        - multiple cards cards \* n
-      - movieList- trending
-        - multiple cards cards \* n
-      - movieList- horror
+## Application Structure
 
-- netflix gpt
-  - Search bar
-  - Movie suggesions
+### Skeleton
+Netflix GPT
+│
+├── Header
+│   ├── Logo
+│   ├── Navigation Bar
+│   ├── Cart
+│
+├── Authentication
+│   ├── Login Form
+│   │   ├── Email Input
+│   │   ├── Password Input
+│   │   ├── Submit Button
+│   ├── Sign Up Form
+│   │   ├── Name Input
+│   │   ├── Email Input
+│   │   ├── Password Input
+│   │   ├── Submit Button
+│
+├── Browser
+│   ├── Main Movie Section
+│   │   ├── Background Movie Trailer
+│   │   ├── Title
+│   │   ├── Description
+│   │   ├── Movie Suggestions
+│   │   ├── Movie List
+│   │   │   ├── Movie Card (Vertical Scroll)
+│   │   │   ├── Movie Card (Vertical Scroll)
+│   │   │   └── ...
+│   ├── Main Video Container
+│   │   ├── Video Background
+│   │   ├── Title
+│   │   └── Description
+│   ├── Secondary Container
+│   │   ├── Popular Movie List
+│   │   │   ├── Movie Card
+│   │   │   ├── Movie Card
+│   │   │   └── ...
+│   │   ├── Trending Movie List
+│   │   │   ├── Movie Card
+│   │   │   ├── Movie Card
+│   │   │   └── ...
+│   │   ├── Horror Movie List
+│   │   │   ├── Movie Card
+│   │   │   ├── Movie Card
+│   │   │   └── ...
+│
+├── Search
+│   ├── GPT Search Bar
+│   ├── Search Results
+│   │   ├── Movie Suggestions
+│   │   │   ├── Movie Card
+│   │   │   ├── Movie Card
+│   │   │   └── ...
+│
+└── Footer // will add leter
+    ├── Links
+    ├── Contact Information
+    └── Social Media Links
+
+- feel free to use 
