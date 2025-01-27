@@ -27,7 +27,7 @@ const useMovies = (movies) => {
     }
     catch (error) {
       console.error("Failed to fetch movies:", error);
-      alert("please change dns to 1.1.1.1");
+      prompt("please change dns to 1.1.1.1");
     }
   };
 
