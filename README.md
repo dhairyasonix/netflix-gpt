@@ -57,10 +57,10 @@ Netflix GPT
 │   │   ├── Password Input
 │   │   ├── Submit Button
 │   ├── Sign Up Form
-│   │   ├── Name Input
-│   │   ├── Email Input
-│   │   ├── Password Input
-│   │   ├── Submit Button
+│       ├── Name Input
+│       ├── Email Input
+│       ├── Password Input
+│       ├── Submit Button
 │
 ├── Browser
 │   ├── Main Movie Section
@@ -69,38 +69,41 @@ Netflix GPT
 │   │   ├── Description
 │   │   ├── Movie Suggestions
 │   │   ├── Movie List
-│   │   │   ├── Movie Card (Vertical Scroll)
-│   │   │   ├── Movie Card (Vertical Scroll)
-│   │   │   └── ...
+│   │       ├── Movie Card (Vertical Scroll)
+│   │       ├── Movie Card (Vertical Scroll)
+│   │       └── ...
 │   ├── Main Video Container
 │   │   ├── Video Background
 │   │   ├── Title
 │   │   └── Description
 │   ├── Secondary Container
-│   │   ├── Popular Movie List
-│   │   │   ├── Movie Card
-│   │   │   ├── Movie Card
-│   │   │   └── ...
-│   │   ├── Trending Movie List
-│   │   │   ├── Movie Card
-│   │   │   ├── Movie Card
-│   │   │   └── ...
-│   │   ├── Horror Movie List
-│   │   │   ├── Movie Card
-│   │   │   ├── Movie Card
-│   │   │   └── ...
+│       ├── Popular Movie List
+│       │   ├── Movie Card
+│       │   ├── Movie Card
+│       │   └── ...
+│       ├── Trending Movie List
+│       │   ├── Movie Card
+│       │   ├── Movie Card
+│       │   └── ...
+│       ├── Horror Movie List
+│           ├── Movie Card
+│           ├── Movie Card
+│           └── ...
 │
 ├── Search
 │   ├── GPT Search Bar
 │   ├── Search Results
-│   │   ├── Movie Suggestions
-│   │   │   ├── Movie Card
-│   │   │   ├── Movie Card
-│   │   │   └── ...
+│       ├── Movie Suggestions
+│           ├── Movie Card
+│           ├── Movie Card
+│           └── ...
 │
-└── Footer // will add leter
+└── Footer (will add later)
     ├── Links
     ├── Contact Information
     └── Social Media Links
 
+
 - feel free to use 
+npm run build
+npm run deploy
