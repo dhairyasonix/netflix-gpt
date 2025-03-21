@@ -1,10 +1,9 @@
 
-import bG_IMG from "../utils/Images/BG_IMG.jpg"
+import bG_IMG from "../utils/Images/"
 export const LOGO = "https://fontmeme.com/permalink/240222/bcdb91e51f3c28e0157e790186fff21d.png"
 
-export const USER_ICON = bG_IMG
 
-
+export const USER_ICON = "https://t4.ftcdn.net/jpg/02/29/75/83/360_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg"
 
 export const BACKGROUND = bG_IMG
 
