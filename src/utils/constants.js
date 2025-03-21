@@ -1,7 +1,10 @@
+
+import bG_IMG from "../utils/Images/BG_IMG.jpg"
 export const LOGO = "https://fontmeme.com/permalink/240222/bcdb91e51f3c28e0157e790186fff21d.png"
 
+export const USER_ICON = bG_IMG
 
-export const USER_ICON = "https://t4.ftcdn.net/jpg/02/29/75/83/360_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg"
+
 
 export const BACKGROUND = "https://assets.nflxext.com/ffe/siteui/vlv3/2f5a878d-bbce-451b-836a-398227a34fbf/web/IN-en-20241230-TRIFECTA-perspective_5ab944a5-1a71-4f6d-b341-8699d0491edd_large.jpg"
 
